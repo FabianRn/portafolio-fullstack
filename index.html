@@ -3,48 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina personal</title>
+
+    <title>PORTAFOLIO FULL STACK | FABIAN REYES DEV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado de la página personal -->
+    
     <header>
-        <h1>Bienvenido a mi página personal</h1>
-        <!-- Navegación de la página personal -->
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Contenido principal de la página personal -->
-    <main>
-        <p>Contenido principal de la página personal</p>
-        <p>mas contenido</p>
-        <p>mas contenido</p>
-        <p>mas contenido</p>
-        <p>mas contenido</p>
+    <nav>
+      <h1>FABIAN EDUARDO REYES NAVARRO</h1>
 
-        <form action="#" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Mensaje:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </main>
-    <!-- Pie de página -->
-    <footer>
-        <p>Información de contacto</p>
-        <p>Dirección: Calle 123, Ciudad</p>
-        <p>Teléfono: 123-456-7890</p>
-        <p>Email: 6yO5Q@example.com</p>
-        <p>Derechos de autor &copy; 2026</p>
-    </footer>
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+      <button id="theme-button">
+        🌙
+      </button>
+
+      <ul id="nav-menu">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+  <div class="hero-content">
+
+    <img
+      src="assets/img/perfil.png"
+      alt="Foto profesional"
+      class="profile-img"
+    />
+
+    <h2>
+      Ingeniero de Automatización Industrial &
+      Desarrollador Web Full Stack Junior
+    </h2>
+
+    <p>
+      Construyendo soluciones web orientadas a dashboards KPI,
+      automatización, monitoreo y aplicaciones empresariales.
+    </p>
+
+    <a href="#projects" class="btn">
+      Ver proyectos
+    </a>
+
+  </div>
+
+</section>
+
+  <section id="about" class="hidden">
+    <h2>Sobre mí</h2>
+
+    <section id="experience" class="hidden">
+
+  <h2>Experiencia Profesional</h2>
+
+  <div class="experience-card">
+
+    <h3>
+      Coordinador Técnico Industrial
+    </h3>
+
+    <p>
+      Más de 14 años de experiencia en
+      instrumentación y automatización industrial,
+      liderazgo de equipos y haciendo seguimiento operacional.
+    </p>
+
+  </div>
+
+</section>
+
+</section>
+
+  <section id="timeline" class="hidden">
+
+  <h2>Mi Camino Profesional</h2>
+
+  <div class="timeline-item">
+    <h3>Ingeniería Instrumentacion y Automatizacion Industrial</h3>
+    <p>
+      Experiencia en automatización,
+      instrumentación y liderazgo técnico.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>Transición a Desarrollo Web</h3>
+    <p>
+      Formación en tecnologías frontend
+      y backend modernas.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>Objetivo Full Stack</h3>
+    <p>
+      Construcción de aplicaciones web
+      orientadas a procesos industriales.
+    </p>
+  </div>
+
+</section>
+
+  <section id="projects" class="hidden">
+    <h2>Proyectos</h2>
+
+    <div class="project-card">
+
+  <h3>Dashboard KPI Industrial</h3>
+
+  <p>
+    Sistema web para seguimiento de indicadores KPI,
+    métricas operacionales y productividad industrial.
+  </p>
+
+  <a href="#" class="btn-project">
+  Ver proyecto
+</a>
+
+</div>
+
+  <div class="project-card">
+
+  <h3>Sistema de Gestión de Mantenimiento</h3>
+
+  <p>
+    Aplicación web para mantenimiento preventivo y correctivo.
+  </p>
+
+  <a href="#" class="btn-project">
+  Ver proyecto
+</a>
+
+</div>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+
+    <section id="tech">
+
+  <h2>Tecnologías</h2>
+
+  <div class="tech-container">
+
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>Git</span>
+    <span>GitHub</span>
+
+  </div>
+
+</section>
+</section>
+
+  <section id="contact" class="hidden">
+
+  <h2>Contacto</h2>
+
+  <form class="contact-form">
+
+    <input
+      type="text"
+      placeholder="Nombre"
+    />
+
+    <input
+      type="email"
+      placeholder="Correo"
+    />
+
+    <textarea
+      placeholder="Mensaje"
+    ></textarea>
+
+    <button type="submit">
+      Enviar
+    </button>
+
+  </form>
+
+</section>
+
+<button id="top-button">
+  ↑
+</button>
+
+  <footer>
+
+  <p>
+    © 2026 Fernx —
+    Portafolio Full Stack
+  </p>
+
+</footer>
+
+  <script src="script.js"></script>
+>>>>>>> 08aff905df21fa3a7ce82d098584520ecb830d03
 
 </body>
 </html>
