@@ -1,0 +1,32 @@
+para git:
+
+subir a repo remoto la primera vez
+
+ubicarse en la carpeta donde esta el proyecto (en el pc)
+
+en la terminal:
+
+git init
+git status
+git add .
+git commit -m "primer commit"
+git status
+
+git remote add origin https://github.com/su-usuario/su-repo.git
+git remote -v
+
+confirmar que aparezca de esta forma:
+origin  https://github.com/su-usuario/mi-projecto.git (fetch)
+origin  https://github.com/su-usuario/mi-projecto.git (push)
+
+
+git branch -m main
+git push -u origin main
+
+validar archivos en el repo de GitHub
+
+luego para actualizar los cambios al repo remoto:
+
+git add .
+git commit -m "descripción del cambio"
+git push

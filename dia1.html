@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dia2.css">
+    <title>PAGINA PERSONAL</title>
 </head>
 <body>
     <!-- Encabezado de la página personal -->
+    
     <header>
-        <h1>Bienvenido a mi página personal</h1>
+    <section class="hero">
+        <h1>BIENBENIDOS A MI PAGINA PERSONAL</h1>
         <!-- Navegación de la página personal -->
         <nav>
             <ul>
@@ -18,26 +24,64 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
+    </section>
     </header>
+    
     <!-- Contenido principal de la página personal -->
     <main>
-        <p>Contenido principal de la página personal</p>
-        <p>mas contenido</p>
-        <p>mas contenido</p>
-        <p>mas contenido</p>
+    <section class="content" >
+        <h2>Inicio</h2>
+        <p>INGENIERO EN CONTROL ELECTRONICO E INSTRUMENTACION <br>
+            Universidad Distrital Francisco José de Caldas  UTS
+        </p>
         <p>mas contenido</p>
 
-        <form action="#" method="post">
+        <h2>Sobre Mi</h2>
+        <p>Ingeniero en Instrumentación y Control con formación tecnológica, integral, autónoma, enfocado hacia la implementación de técnicas de planeación y programación de mantenimiento industrial, con experiencia laboral en el campo de los hidrocarburos, haciendo gestión y prestando soporte profesional en el área de instrumentación y automatización industrial; diseño, Instalación y mantenimiento de sistemas de comunicaciones para sistemas SCADA; dominio en el manejo, soporte y mantenimiento de sistemas informáticos con conocimientos aplicados a la gestión de recursos, de excelentes relaciones interpersonales, habilidad para    trabajar    en    equipo    o    individualmente,    con    un    constante
+            mejoramiento continuo, de  muy  rápido  aprendizaje, con  alto  grado  de responsabilidad y fácil interpretación de las políticas organizacionales
+        </p>
+        
+    
+        <h2>Portafolio Personal</h2>
+        <h3>Experiencia laboral relevante</h3>
+        <div class="container">
+            <div class="project">
+                <h3>Proyecto 1: Diseño e Implementación de un Sistema de Control para una Planta de Tratamiento de Agua</h3>
+                <p>Descripción: Este proyecto consistió en el diseño e implementación de un sistema de control para una planta de tratamiento de agua, utilizando PLCs y SCADA para monitorear y controlar los procesos de tratamiento.</p>
+                <button class="btn">Ver más</button>
+            </div>
+        
+        
+            <div class="project">
+                <h3>Proyecto 2: Mantenimiento Predictivo en una Refinería</h3>
+                <p>Descripción: En este proyecto, se implementó un programa de mantenimiento predictivo en una refinería, utilizando técnicas de análisis de vibraciones y termografía para identificar posibles fallas en los equipos antes de que ocurran.</p>
+                <button class="btn">Ver más</button>
+            </div>
+
+            <div class="project">
+                <h3>Proyecto 3: Implementación de un Sistema de Monitoreo en una Planta Química</h3>
+                <p>Descripción: Este proyecto consistió en la implementación de un sistema de monitoreo en una planta química, utilizando sensores y sistemas de control para optimizar los procesos de producción.</p>
+                <button class="btn">Ver más</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-form">
+        <form id="cform" action="#" method="post">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required><br><br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="message">Mensaje:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea><br><br>
-            <input type="submit" value="Enviar">
+            <button type="submit" value="Enviar">Enviar</button>
         </form>
+        </div>
+    </div>
     </main>
+    
     <!-- Pie de página -->
+    <div class="footer">
     <footer>
         <p>Información de contacto</p>
         <p>Dirección: Calle 123, Ciudad</p>
@@ -45,5 +89,6 @@
         <p>Email: 6yO5Q@example.com</p>
         <p>Derechos de autor &copy; 2026</p>
     </footer>
+    </div>
 </body>
 </html>
