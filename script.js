@@ -53,3 +53,60 @@ topButton.addEventListener('click', () => {
     });
 
   });
+
+  fetch('https://api.github.com/users/octocat')
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const apiContainer =
+      document.getElementById('api-container');
+
+    apiContainer.innerHTML = `
+
+      <h3>${data.name}</h3>
+
+      <p>Repositorios: ${data.public_repos}</p>
+
+      <img
+        src="${data.avatar_url}"
+        width="120"
+      />
+
+    `;
+
+  });
+
+  fetch('http://localhost:3000/api/profile')
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const profileContainer =
+  document.getElementById('profile-container');
+
+profileContainer.innerHTML = `
+
+  <h3>${data.name}</h3>
+
+  <p>
+    <strong>Cargo:</strong>
+    ${data.role}
+  </p>
+
+  <p>
+    <strong>Experiencia:</strong>
+    ${data.experience}
+  </p>
+
+`;
+
+  })
+
+  .catch(() => {
+
+    // Static content in HTML already serves as fallback
+
+  });
